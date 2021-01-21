@@ -1,0 +1,81 @@
+$mainColor: #ffc472;
+$secondaryColor: rgba(230, 233, 236, 0.904);
+$mainFont: "Montserrat", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding: 20px;
+  background-color: $secondaryColor;
+  border-radius: 20px;
+  margin: 20px auto 0;
+}
+.task-container {
+  width: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .completed {
+    margin-right: 5px;
+    background-color: $secondaryColor;
+  }
+  p {
+    padding: 10px;
+    margin-right: 20px;
+  }
+  .delete {
+    margin: 0 5px;
+    color: $secondaryColor;
+    height: fit-content;
+    position: absolute;
+    right: 20px;
+    &:hover {
+      cursor: pointer;
+      color: red;
+    }
+  }
+}
+
+.App {
+  text-align: center;
+  width: fit-content;
+  font-family: $mainFont;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-align: center;
+    width: fit-content;
+  }
+  .addInput {
+    padding: 20px;
+    input {
+      padding: 20px;
+      width: 500px;
+      outline: none;
+      border-radius: 20px;
+      border: none;
+      margin-right: 20px;
+      font-size: medium;
+    }
+    button {
+      border-radius: 50%;
+      background-color: $mainColor;
+      padding: 20px;
+      border: none;
+      font-size: large;
+      outline: none;
+      &:hover {
+        cursor: pointer;
+        background-color: green;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+  background-color: rgba(230, 233, 236, 0.904);
+  border-radius: 20px;
+  margin: 20px auto 0;
+}
+
+.task-container {
+  width: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.task-container .completed {
+  margin-right: 5px;
+  background-color: rgba(230, 233, 236, 0.904);
+}
+
+.task-container p {
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.task-container .delete {
+  margin: 0 5px;
+  color: rgba(230, 233, 236, 0.904);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  right: 20px;
+}
+
+.task-container .delete:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.App {
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App h1 {
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.App .addInput {
+  padding: 20px;
+}
+
+.App .addInput input {
+  padding: 20px;
+  width: 500px;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  margin-right: 20px;
+  font-size: medium;
+}
+
+.App .addInput button {
+  border-radius: 50%;
+  background-color: #ffc472;
+  padding: 20px;
+  border: none;
+  font-size: large;
+  outline: none;
+}
+
+.App .addInput button:hover {
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+/*# sourceMappingURL=App.css.map */
